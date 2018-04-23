@@ -18,7 +18,7 @@ class Transfer
   def execute_transaction
     if self.valid? 
       binding.pry
-      new_balance = (@sender.balance - @amount) 
+      @sender.balance = (@sender.balance - @amount) 
       (@receiver.balance + @amount)
     else
       @status = "rejected"
