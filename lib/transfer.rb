@@ -12,7 +12,6 @@ class Transfer
     if @sender && @receiver
       true
     end
-    
   end
   
   def execute_transaction
