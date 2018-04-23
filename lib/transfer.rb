@@ -20,6 +20,7 @@ class Transfer
     end
     if @receiver.valid? 
       @receiver + @amount
+    end 
     @status = "rejected"
     "Transaction rejected. Please check your account balance."
   end
