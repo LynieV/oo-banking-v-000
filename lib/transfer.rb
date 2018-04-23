@@ -17,6 +17,8 @@ class Transfer
   def execute_transaction
     if @sender.valid? 
       @sender - @amount
+    else
+      
     end
     if @receiver.valid? 
       @receiver + @amount
