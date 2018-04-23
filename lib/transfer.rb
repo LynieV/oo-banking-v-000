@@ -15,8 +15,8 @@ class Transfer
   end
   
   def execute_transaction
-    #@sender - @amount
-    #@receiver + @amount
+    send = @sender - @amount
+    receive = @receiver + @amount
     @status = "rejected"
     "Transaction rejected. Please check your account balance."
   end
