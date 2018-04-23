@@ -15,7 +15,7 @@ class Transfer
   end
   
   def execute_transaction
-    if @sender.valid? 
+    if self.valid? 
       (@sender - @amount) and (@receiver + @amount)
     else
       @status = "rejected"
