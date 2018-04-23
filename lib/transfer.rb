@@ -20,7 +20,6 @@ class Transfer
       @sender.balance = (@sender.balance - @amount)
       @receiver.balance = (@receiver.balance + @amount)
       @status = "complete"
-      execute_transaction.uniq
     else
       @status = "rejected"
       "Transaction rejected. Please check your account balance."
